@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang = "pt-br">
+<head>
+<meta charset="utf-8">
+<title>
+Condicional Loop do...while
+</title>
+</head>
+<body>
+<h1>Condicional Loop do...while</h1>
+Condicional de loop do...while executa depois do teste de condição, neste caso a declaração é executada ao menos uma vez.<br><br>
+
+Sintaxe: do{} while (); <br><br>
+
+<script>
+
+/*var n = parseFloat(prompt("Dígite um número"));
+
+for(var i = 1; i <= 1000; i++){
+document.write(n + " x " + i + " = " + (n*i) + "<br>");
+
+};*/
+
+console.log("So");
+var numero = parseFloat(prompt("Digite um número"));
+var indice = 5000;
+while(isNaN(numero)){
+numero = parseFloat(prompt("Digite um número"));
+}
+do{
+document.write(numero + " x " + indice + " = " + (numero*indice) + "<br>");
+indice = indice+1
+} while (indice<=1000);
+
+
+document.write(numero + " x " + indice + " = " + (numero*indice) + "<br>");
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

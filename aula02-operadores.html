@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>
+Operadores - Lódigica de Programação com JavaScript
+</title>
+</head>
+<body>
+<h1>Operadores - Lógica de programação em JS</h1>
+<h2>Operadores Aritméticos</h2>
+<p>Realizam as operações de matemática.</p>
++ Adição<br>
+- Subtração<br>
+* Multiplicação<br>
+/ Divisão<br>
+** Exponenciação<br>
+++ Incremento<br>
+-- Decremento<br>
+% Módulo (resto da divisão)<br><br>
+
+Exemplo:<br>
+
+<script>
+
+var a = 10;
+var b = 3;
+var total = a + b;
+var teste = (7 + 2) * b;
+
+document.write("<br>" + total);
+document.write("<br>");
+document.write("<br>" + teste);
+
+</script>
+
+<h2>Operadores de Atribuição</h2>
+<p>Atribuem um valor do operador à esquerda baseado no valor do operador à direita.</p>
+= Atribuição<br>
++= Atribuição de soma<br>
+-= Atribuição de subtração<br>
+*= Atribuição de multiplicação<br>
+/= Atribuição de divisão<br>
+%= Atribuição de resto<br>
+
+<br>Exemplo:<br>
+
+<script>
+
+(a -= b);
+document.write("<br>" + a);
+
+
+</script>
+<h2>Precedência de Operador Aritméticos</h2>
+Parênteses<br>
+Exponênciação<br>
+Multiplicação<br>
+Divisão<br>
+Adição<br>
+Subtração<br>
+Obs. Mult e Div, resolve o que vier primeiro<br>
+Obs. Adi e Sub, resolve o que vier primeiro<br>
+<h2>Operadores de Comparação ou Relacionais</h2>
+<p>Compara dois valores e retorna um valor Boleano como verdadeiro (true) or falso (false)</p>
+> Maior que<br>
+< Menor que<br>
+>= Maior ou igual<br>
+<= Menor ou igual<br>
+!= Diferente<br>
+== Igual<br>
+=== Igual a "Valor e Tipo"<br><br>
+
+Exemplo:
+
+<script>
+
+var x = 10 < 12;
+document.write(x);
+
+</script>
+<h2>Operadores Lógicos</h2>
+&& AND Operador recebe dois valores operandos e retorna verdadeiro somente se ambos operandos forem verdadeiros.<br><br>
+
+|| OR Operador retorna verdadeiro se um dos dois forem operandos forem verdadeiros. <br><br>
+
+! NOT Operador de negação é um operador unário, ou seja, opera sobre apenas um operando. Ele nega e inverte o valor lógico da situação ou operando.<br>
+
+<script>
+
+var y = true;
+document.write("<br>" + "y = " + y);
+document.write("<br>" + "!y = " + !y);
+
+</script>
+
+<h2>Operadores de String</h2>
++ Concatenar<br>
+Operador de concatenação é usado para unir strings "textos" em um JavaScript<br>
+Obs. Em outras linguagens de programação também se usa o operador (.) para concatenar.<br>
+<h2>Operador Condicional (ternário)</h2>
+if Condicional<br><br>
+
+Operador ternário JavaScript é um contração de um operador de atribuição e duas expreções lógicas.<br><br>
+
+Exemplo: Calcular o valor final de uma compra, se o valor da compra for superior a 100 será aplicado um desconto de 10%<br><br>
+
+Sintaxe: if(condição){verdadeiro} else {falso}<br>
+<script>
+
+if(10<=15){document.write("verdadeiro")} else {document.write("falso")};
+if(a>b){
+document.write("<br>" , a + b )
+} else{
+document.write("<br> Não, é menor");
+};
+
+</script>
+<br><br><br>
+<script>
+
+var qtde = 10;
+var unit = 10;
+var total = qtde*unit;
+var desc = .1;
+var regra = 100;
+
+if(total>=regra){
+document.write("Total com desconto de 10% = " , total - total*desc) 
+} else {
+document.write("Valor à pagar = " + (total))
+};
+
+
+</script>
+<br><br><br><h2>Operador vírgula (,)</h2>
+Vírgula em JavaScript é usada para detonar "explodir ou separar" uma lista de valores. Ela pode ser usada para declarar várias variáveis de uma vez:<br>
+
+var x, y, z; k;<br>
+
+Para detonar elementos de uma lista:<br>
+var lista = [10, 20, 30, 40]
+<br>Exemplo: <br>
+
+<script>
+
+var lista = [10, 20, 30, 40, 500];
+
+document.write(lista [4]);
+
+</script>
+<h2>Operadores Bit a Bit</h2>
+<p>Os Operadores bit a bit são utilizados para manipular valores para comparações e cálculos, comparando cada bit do primeiro operando com o correspondente do segundo.</p>
+<p>Por serem operadores de manipulação, bit a bit são utilizados por linguagem de programação que comunica e manipula o hardware com o objetivo de testar, atribuir ou deslocar.</p>
+
+<p>Eles não são considerados operadores lógicos, já que os operandos são tratados como uma sequência de 32 bits, representados por zeros e uns (0100111010111011100), em vez de números decimais, hexadecimais, octais ou binários.
+</p>
+& AND <br>
+| OR <br>
+^ XOR (OU-EXCLUSIVO) <br>
+~ Complemento de 1 <br>
+&gt;&gt; Deslocamento à direita <br>
+&lt;&lt; Deslocamento à esquerda <br>
+</body>
+</html>

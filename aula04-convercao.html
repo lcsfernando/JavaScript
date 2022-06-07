@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang = "pt-br">
+<head>
+<meta charset="utf-8"">
+<title>
+
+Conversão entre tipos de dados - Lógica de programação em JavaScript		
+
+
+</title>
+</head>
+<body>
+<h1>Conversão entre tipos de dados - Lógica de programação em JavaScript</h1>
+O parseFloat() analisa um valor como uma string e retornas o primeiro número. Se não puder ser convertido, NAN será retornardo.<br><br>
+
+Exemplo:<br>
+<script>
+var n1 = prompt("Digite um número");
+n1 = parseFloat(n1);
+//Comentário de linha
+/* Comentário de bloco requer inicio e fim da marcação do comentário */
+var n2 = prompt("Digite mais um número");
+n2 = parseFloat(n2);
+var n3 = parseFloat(prompt("Digite um terceiro número"));
+alert((n1+n2+n3));
+var total = (n1+n2+n3);
+alert(total);
+alert(typeof(parseFloat(prompt("Digite um quarto número"))));
+
+
+document.write(typeof(n1) , "<br>");
+document.write(typeof(n2) , "<br>" , typeof(n3));
+
+</script>
+
+
+</body>
+</html>

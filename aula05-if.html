@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>
+IF Decisão Condicional - Lógica de Programação em JS
+</title>
+</head>
+<body>
+<h1>IF Decisão Condicional - Lógica de Programação em JS</h1>
+<p>Sintaxe de if simples, apenas com verdadeiro: if(condição){verdadeiro};</p>
+
+<p>Sintaxe de if com verdadeiro e falso:if(){}else{falso};</p>
+
+<!-- Comentário em html -->
+<script>
+/*
+if(5 >= 5){alert("Sim, é maior ou igual")} else{
+alert("Não, é menor")
+};
+*/
+var n1 = parseFloat(prompt("Digíte um número"));
+var n2 = parseFloat(prompt("Digíte outro número"));
+var media = (n1+n2)/2;
+//alert(media);
+//document.write("A media do valor " , n1 , " e do valor " , n2 , " é igual à " , media , ".");
+if(media<=5 || n1==0 || n2==0){
+alert("Reprovado");
+}else{
+alert("Parabéns, você está aprovado, sua média foi de " + (media) + ".")
+};
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

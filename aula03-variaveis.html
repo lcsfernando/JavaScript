@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang = "pt-br">
+<head>
+<meta charset="utf-8"">
+<title>
+
+Variáveis - Lógica de programação com JavaScript		
+
+
+</title>
+</head>
+<body>
+<h1>Variáveis - Lógica de programação com JavaScript</h1>
+<h2>Declaração de Variáveis</h2>
+O nome das variáveis possuem regras para sua declaração<br>
+
+JavaScript é uma liguagem case sensitive<br>
+Não pode conter caracteres<br>
+Não pode iniciar com números<br>
+Não pode ter espaços<br>
+Pode iniciar com o caractere _ underline<br>
+Não pode ser palavras reservadas da linguagem<br>
+Dica: Usar os nomes da variáveis em português!!!<br>
+
+<h2>Palavras Reservadas</h2>
+São as palavras chaves identificadores pré reservados, como por exemplos os comandos da linguagem de programação.<br>
+Exemplo de palavras reservadas: abstrat, byte, int, import, boolean, default, char, do, for, goto, case, continue, delete, etc...
+
+<h2>Tipos de dados JS - Data types</h2>
+null - Não valor, ou inexistente de valor associado a uma variável<br>
+undefined - Conteúdo de variável não iniciada<br>
+boolean - Verdadeiro (true) ou falso (false)<br>
+string - Para sequência de zeros e caracteres, normalmente representa textos<br>
+number - Números inteiros e flutuantes<br>
+NaN - Not a Number, número inválido<br>
+symbol - Obsoleto... usado para objetos<br>
+object - Para coleção de propriedades<br><br>
+
+Para descobrir o tipo de dados usamos o typeof<br><br> 
+
+Exemplo:<br>
+<script>
+
+document.write(typeof(10));
+
+
+
+
+var nome = prompt("Qual é o seu nome?");
+var idade = prompt("Você tem quantos anos?");
+
+if(idade<18){
+alert("Bom dia, " + nome + ("! Você tem ") + (idade) + (" anos de idade. Você não pode acessar nosso site."));
+alert(nome + (" acesse nossa página em ") + (18-idade) + (" anos."));
+} else
+{
+alert("Bom dia, " + nome + ("! Você tem ") + (idade) + (" anos de idade. Você pode acessar nosso site."));
+};
+document.write("<br><br>Bom dia, " , nome , ", você tem " , idade , " anos de idade.");
+
+</script>
+
+
+
+</body>
+</html>

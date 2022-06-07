@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang = "pt-br">
+<head>
+<meta charset="utf-8">
+<title>
+Função Calculadora - Lógica de Programação com JS
+</title>
+</head>
+<body>
+<h1>Função Calculadora Lógica de Programação com JS</h1>
+
+<button onClick = "somar()"> + Somar </button><br><br>
+
+<button onClick = "subtrair()">- Subtrair</button><br><br>
+<button onClick = "dividir()">/ Dividir</button><br><br>
+
+<button onClick ="multiplicar()">* Multiplicar</button><br><br>
+<button onClick = "limpar()">Limpar</button><br><br>
+<div id="output"></div>
+<script>
+//criando a função e não retorna nenhum valor até ser requisitada
+/*function somar(){
+
+var n1 = parseFloat(prompt("Digite um número"));
+var n2 = parseFloat(prompt("Digite um outro número"));
+
+//mostrar no output do html
+
+var output = document.querySelector("#output");
+var mensagem = "";
+
+//enquanto indice for <= 1000 concatenar na var mensagem
+
+while(isNaN(n1) || isNaN(n2)){
+n1 = parseFloat(prompt("Digite um número, não uma caractere."));
+n2 = parseFloat(prompt("Digite outro número, não uma caractere."));
+console.log ("não é número");
+};
+
+mensagem += n1 + " + " + n2 + " = " + (n1+n2) + "<br>";
+
+output.innerHTML = mensagem;
+
+};
+
+function subtrair(){
+var n1 = parseFloat(prompt("Digite um número"));
+var n2 = parseFloat(prompt("Digite um outro número"));
+
+//mostrar no output do html
+
+var output = document.querySelector("#output");
+var mensagem = "";
+
+//enquanto indice for <= 1000 concatenar na var mensagem
+
+while(isNaN(n1) || isNaN(n2)){
+n1 = parseFloat(prompt("Digite um número, não uma caractere."));
+n2 = parseFloat(prompt("Digite outro número, não uma caractere."));
+console.log ("não é número");
+};
+
+mensagem += n1 + " - " + n2 + " = " + (n1-n2) + "<br>";
+
+output.innerHTML = mensagem;
+
+};
+
+function dividir(){
+var n1 = parseFloat(prompt("Digite um número"));
+var n2 = parseFloat(prompt("Digite um outro número"));
+
+//mostrar no output do html
+
+var output = document.querySelector("#output");
+var mensagem = "";
+
+while(isNaN(n1) || isNaN(n2)){
+n1 = parseFloat(prompt("Digite um número, não uma caractere."));
+n2 = parseFloat(prompt("Digite outro número, não uma caractere."));
+console.log ("não é número");
+};
+
+mensagem += n1 + " / " + n2 + " = " + (n1/n2) + "<br>";
+
+output.innerHTML = mensagem;
+
+};
+
+function multiplicar(){
+var n1 = parseFloat(prompt("Digite um número"));
+var n2 = parseFloat(prompt("Digite um outro número"));
+
+var output = document.querySelector("#output");
+var mensagem = "";
+
+while(isNaN(n1) || isNaN(n2)){
+n1 = parseFloat(prompt("Digite um número, não uma caractere."));
+n2 = parseFloat(prompt("Digite outro número, não uma caractere."));
+console.log ("não é número");
+};
+
+mensagem += n1 + " x " + n2 + " = " + (n1*n2) + "<br>";
+
+output.innerHTML = mensagem;
+
+};
+
+
+function limpar(){
+mensagem = "";
+output.innerHTML = mensagem;
+};*/
+
+var n1 = parseFloat(prompt("Digíte um número"));
+while(isNaN(n1)){
+n1 = parseFloat(prompt("Digite um número, não uma caractere."))};
+escreve();
+
+function escreve(){
+var output = document.querySelector("#output");
+output.innerHTML = n1;
+};
+
+function somar(){
+var n2 = parseFloat(prompt("Digíte um número"));
+while(isNaN(n2)){
+n2 = parseFloat(prompt("Digite um número, não uma caractere."))};
+n1 += n2;
+escreve();
+};
+
+function subtrair(){
+var n2 = parseFloat(prompt("Digíte um número"));
+while(isNaN(n2)){
+n2 = parseFloat(prompt("Digite um número, não uma caractere."))};
+n1 -= n2;
+escreve();
+};
+
+function dividir(){
+var n2 = parseFloat(prompt("Digíte um número"));
+while(isNaN(n2)){
+n2 = parseFloat(prompt("Digite um número, não uma caractere."))};
+n1 /= n2;
+escreve();
+};
+
+function multiplicar(){
+var n2 = parseFloat(prompt("Digíte um número"));
+while(isNaN(n2)){
+n2 = parseFloat(prompt("Digite um número, não uma caractere."))};
+n1 *= n2;
+escreve();
+};
+
+function limpar(){
+n1 = 0;
+escreve();
+};
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

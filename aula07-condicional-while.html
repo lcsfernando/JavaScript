@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang = "pt-br">
+<head>
+<meta charset="utf-8">
+<title>
+Condicional While
+</title>
+</head>
+<body>
+<h1>Condicional While</h1>
+While é condicional de loop. Repita a condição ENQUANTO for verdadeiro.<br>
+
+<script>
+var n = parseFloat(prompt("Digite um número"));
+//n= Número digitado.
+//x= indice.
+/*document.write(n + " x 1 = " + (n*1) + "<br>" + n + " x 2 = " + (n*2) + "<br>" + n + " x 3 = " + (n*3) + "<br>");*/
+/*document.write(n + " x " + x + " = " + n*x + "<br>");
+x ++
+document.write(n + " x " + x + " = " + n*x + "<br>");*/
+
+
+var x = 1;
+
+
+while(x<=1000){
+
+document.write(n + " x " + x + " = " + (n*(x++)) + "<br>");
+
+};
+document.write("Saiu do loop.");
+
+//Observação: garantir a condição em algum momento seja falso, para garantir o fim do loop e não ficar infinito ao ponto de travar o sistema.
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

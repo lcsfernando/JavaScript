@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang = "pt-br">
+<head>
+<meta charset="utf-8">
+<title>
+Função Lógica de Programação com JS
+</title>
+</head>
+<body>
+<h1>Função Lógica de Programação com JS</h1>
+Função void não retorna nenhum valor, mas são úteis no reaproveitamento de código.<br><br>
+<button onClick = "mostrarTabuada()">Criar tabuada</button><br><br>
+
+<button onClick = "limparTabuda()">Limpar tabuada</button><br><br>
+<div id="output"></div>
+<script>
+//criando a função e não retorna nenhum valor até ser requisitada
+function mostrarTabuada(){
+
+var n = parseFloat(prompt("Digite um número"));
+var i = 1;
+
+//mostrar no output do html
+
+var output = document.querySelector("#output");
+var mensagem = "";
+
+//enquanto indice for <= 1000 concatenar na var mensagem
+
+while(isNaN(n)){
+n = parseFloat(prompt("Digite um número, não uma caractere."));
+console.log ("não é número");
+};
+while(i<=1000){
+mensagem += n + " x " + i + " = " + (n*i) + "<br>";
+i++;
+};
+
+output.innerHTML = mensagem;
+
+};
+
+function limparTabuda(){
+mensagem = "";
+output.innerHTML = mensagem;
+};
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
